@@ -1,0 +1,6 @@
+{
+  "name": "ItzFizz Aero - Scroll-Driven Hero Animation",
+  "description": "High-performance scroll-driven hero section inspired by ItzFizz, featuring letter-spaced headline reveal, staggered metrics, and fluid GSAP scroll interpolation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

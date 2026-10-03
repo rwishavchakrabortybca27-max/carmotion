@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #f5f5f5;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Letter Spacing for Luxury Headline */
+.tracking-ultra-wide {
+  letter-spacing: 0.35em;
+}
+
+.tracking-mega-wide {
+  letter-spacing: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .tracking-mega-wide {
+    letter-spacing: 0.75em;
+  }
+}
+
+/* Tabular numbers for all telemetry and stats */
+.tabular-numbers {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Hardware accelerated transform hints */
+.will-change-transform {
+  will-change: transform, opacity;
+}
+
+/* Glowing mask utilities */
+.radial-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(20, 20, 25, 0) 0%, rgba(5, 5, 5, 0.85) 80%, rgba(5, 5, 5, 1) 100%);
+}
+
+.glow-amber-radial {
+  background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.12) 0%, rgba(245, 158, 11, 0.02) 50%, transparent 75%);
+}
+
+.glow-cyan-radial {
+  background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.01) 50%, transparent 75%);
+}
