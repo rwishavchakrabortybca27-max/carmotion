@@ -209,7 +209,6 @@ export default function App() {
               <RealisticCarTrack
                 telemetry={telemetry}
                 playKey={playKey}
-                roadTheme="circuit"
               />
             ) : (
               <div className="relative w-full h-full flex flex-col justify-between">
